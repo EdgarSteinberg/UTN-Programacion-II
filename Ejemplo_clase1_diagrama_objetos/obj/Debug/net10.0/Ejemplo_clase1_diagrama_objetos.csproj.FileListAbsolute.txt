@@ -1,0 +1,14 @@
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\bin\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.exe
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\bin\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.deps.json
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\bin\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.runtimeconfig.json
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\bin\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\bin\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.pdb
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.AssemblyInfo.cs
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\refint\Ejemplo_clase1_diagrama_objetos.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.pdb
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\Ejemplo_clase1_diagrama_objetos.genruntimeconfig.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Ejemplo_clase1_diagrama_objetos\obj\Debug\net10.0\ref\Ejemplo_clase1_diagrama_objetos.dll
