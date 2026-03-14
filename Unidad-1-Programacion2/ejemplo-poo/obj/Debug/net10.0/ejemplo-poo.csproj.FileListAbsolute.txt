@@ -1,0 +1,15 @@
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\bin\Debug\net10.0\ejemplo-poo.exe
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\bin\Debug\net10.0\ejemplo-poo.deps.json
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\bin\Debug\net10.0\ejemplo-poo.runtimeconfig.json
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\bin\Debug\net10.0\ejemplo-poo.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\bin\Debug\net10.0\ejemplo-poo.pdb
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.AssemblyInfo.cs
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.sourcelink.json
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\refint\ejemplo-poo.dll
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.pdb
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ejemplo-poo.genruntimeconfig.cache
+C:\Users\ACER\Desktop\UTN 2do Cuatrimestre 2026\Programacion ll - Martes & Viernes\unidad 1\.NET\Unidad-1-Programacion2\ejemplo-poo\obj\Debug\net10.0\ref\ejemplo-poo.dll
