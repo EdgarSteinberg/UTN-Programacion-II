@@ -7,14 +7,18 @@ using ejemplo_poo.Dominio;
 using ejemplo_poo.Helpers;
 
 
-Persona unaPersona = new Alumno("12345", 8.5f); // upcasting
+Persona unaPersona = new Alumno("Leo", "Fernandez", "leo_perez@email.com", "12345", 8.5f); // upcasting
 Alumno unAlumno = (Alumno)unaPersona; //downcasting
 
-unaPersona = new Docente("Matemáticas", 20); 
+unaPersona = new Docente("Matemáticas", 20);
 
 unaPersona.SetNombre("Juan");
 unaPersona.SetApellido("Perez");
 unaPersona.SetEmail("juan.perez@example.com");
+
+/* unAlumno.SetNombre("Edgar");
+unAlumno.SetApellido("Steinberg");
+unAlumno.SetEmail("stein@example.com"); */
 /* unaPersona.Legajo = "N100";
 unaPersona.Promedio = 8.5F; */
 

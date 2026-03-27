@@ -2,7 +2,7 @@ namespace ejemplo_poo.Dominio;
 
 public class Alumno : Persona
 {
-    public Alumno(string legajo, float promedio)
+    public Alumno(string nombre, string apellido, string email, string legajo, float promedio) : base(nombre, apellido, email)
     {
         this.Legajo = legajo;
         this.Promedio = promedio;
@@ -12,7 +12,7 @@ public class Alumno : Persona
 
     public override string Saludar()
     {
-        return $"Hola, soy un alumno con legajo ({this.Legajo}) mi nombre es: {this.GetNombre()} {this.GetApellido()} mi email es: {this.GetEmail()}";
+        return $"{base.Saludar()} soy un alumno con legajo ({this.Legajo}) y promedio {this.Promedio}";
     }
 
 

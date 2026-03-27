@@ -13,6 +13,20 @@ public abstract class Persona
         return this.nombre;
     }
 
+    public Persona()
+    {
+        this.nombre = "Sin nombre";
+        this.apellido = "Sin apellido";
+        this.email = "Sin email";
+    }
+
+    public Persona(string nombre, string apellido, string email)
+    {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
+
     public void SetNombre(string nombre)
     {
         if (nombre == "Juan")
@@ -44,12 +58,12 @@ public abstract class Persona
 
 
     //Comportamiento Metodo
-    /*  public virtual string Saludar() //Virtual me permite sobrescribir
-     {
-         return $"Hola mi nombre es {this.nombre} {this.apellido} y mi email es {this.email}";
-     } */
+    public virtual string Saludar() //Virtual me permite sobrescribir
+    {
+        return $"Hola mi nombre es {this.nombre} {this.apellido} y mi email es {this.email}";
+    }
 
-    public abstract string Saludar();
+    /* public abstract string Saludar(); */
 
 
 }
