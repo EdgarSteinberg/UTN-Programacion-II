@@ -10,6 +10,9 @@ empleado.ObjetivoCumplido = 100;
 empleado.BonoPresentismo = bonoA;
 empleado.BonoResultado = bonoResultado;
 
+Gerente gerente = (Gerente) empleado;
+gerente.Print();
+
 Console.WriteLine($"El empleado tiene sueldo de ${empleado.CalcularSueldo()}");
 
 empleado.BonoPresentismo = bonoB;
@@ -34,13 +37,19 @@ public abstract class Empleado
         return this.CalcularNeto() + this.BonoPresentismo.Calcular(this.Inasistencias) + BonoResultado.Calcular(this.ObjetivoCumplido, this.CalcularNeto());
     }
 
+
 }
 
-public class Gerente : Empleado
+public class Gerente : Empleado, Imprimible
 {
     public override float CalcularNeto()
     {
         return 100000;
+    }
+
+    public string Print()
+    {
+        return "Soy un gerente";
     }
 }
 
@@ -55,6 +64,8 @@ public class Administrativo : Empleado
 public abstract class BonoPresentismo
 {
     public abstract float Calcular(int inasistencias);
+
+
 }
 
 public class BonoPresentismoA : BonoPresentismo
@@ -91,5 +102,21 @@ public class BonoResultado
             return 0;
 
     }
+
+
+}
+
+public interface Imprimible
+{
+    public string Print();
+}
+
+public class Printer
+{
+    public void Print(Imprimible imprimible)
+    {
+        Console.WriteLine(imprimible.Print());
+    }
+
 
 }
