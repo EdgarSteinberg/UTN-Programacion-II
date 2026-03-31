@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using Microsoft.VisualBasic;
+
+Console.WriteLine("Hello, World!");
 
 BonoPresentismo bonoA = new BonoPresentismoA();
 BonoPresentismo bonoB = new BonoPresentismoB();
@@ -18,7 +20,15 @@ Console.WriteLine($"El empleado tiene sueldo de ${empleado.CalcularSueldo()}");
 empleado.BonoPresentismo = bonoB;
 Console.WriteLine($"El empleado tiene sueldo de ${empleado.CalcularSueldo()}");
 
+List<Empleado> empleados = new List<Empleado>();
+empleados.Add(admin);
+empleados.Add(empleado);
+/* empleado.Remove(admin); */
 
+foreach(Empleado item in empleados)
+{
+    Console.WriteLine($"El sueldo del empledo es: {item.CalcularSueldo()} ({item.ToString()})");
+}
 
 public abstract class Empleado
 {
@@ -51,6 +61,11 @@ public class Gerente : Empleado, Imprimible
     {
         return "Soy un gerente";
     }
+
+    public override string ToString()
+    {
+        return "Gerente";
+    }
 }
 
 public class Administrativo : Empleado
@@ -58,6 +73,11 @@ public class Administrativo : Empleado
     public override float CalcularNeto()
     {
         return 500000;
+    }
+
+    public override string ToString()
+    {
+        return "Administrativo";
     }
 }
 
