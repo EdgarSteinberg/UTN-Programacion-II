@@ -64,7 +64,7 @@ public class Gerente : Empleado, Imprimible
 
     public override string ToString()
     {
-        return "Gerente";
+        return "Soy un Gerente";
     }
 }
 
