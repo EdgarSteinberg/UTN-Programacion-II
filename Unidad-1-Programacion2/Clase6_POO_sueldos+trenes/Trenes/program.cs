@@ -8,7 +8,7 @@ internal class Program
 
         //Después creás una locomotora:
         Locomotora objLocomotora1 = new Locomotora();
-
+        objLocomotora1.VelocidadMaxima = 80; //Velocidad maxima
         //Y luego la agregás a la formación con el método que hiciste:
         objFormacion1.AgregarLocomotora(objLocomotora1);
 
@@ -35,6 +35,10 @@ internal class Program
         p3.AnchoUtil = 2;
         objFormacion1.AgregarVagon(p3);
         Console.WriteLine($"Cantidad de vagones livianos: {objFormacion1.CantidadDeVagonesLivianos()}");
+
+        //3La velocidad máxima de una formación, que es el mínimo entre las velocidades máximasde las locomotoras
+        Console.WriteLine($"Velocidad maxima de la formacion {objFormacion1.VelocidadMaximaFormacion()}");
+
 
         //4 Si una formación es eficiente; es eficiente si cada una de sus locomotoras arrastra, almenos, 5 veces su peso (el de la locomotora misma).
         objLocomotora1.Peso = 1000;
@@ -110,9 +114,24 @@ public class Formacion
             {
                 return false;
             }
-        } 
+        }
 
         return true;
+    }
+
+    public double VelocidadMaximaFormacion()
+    {
+        double minima = _locomotoras[0].VelocidadMaxima;
+
+        foreach (Locomotora locomotora in _locomotoras)
+        {
+            if (locomotora.VelocidadMaxima < minima)
+            {
+                minima = locomotora.VelocidadMaxima;
+            }
+        }
+
+        return minima;
     }
 }
 
