@@ -35,6 +35,12 @@ internal class Program
         p3.AnchoUtil = 2;
         objFormacion1.AgregarVagon(p3);
         Console.WriteLine($"Cantidad de vagones livianos: {objFormacion1.CantidadDeVagonesLivianos()}");
+
+        //4 Si una formación es eficiente; es eficiente si cada una de sus locomotoras arrastra, almenos, 5 veces su peso (el de la locomotora misma).
+        objLocomotora1.Peso = 1000;
+        objLocomotora1.PesoMaximoArrastre = 12000;
+
+        Console.WriteLine($"La Formacion es eficiente? {objFormacion1.esEficiente()}");
     }
 }
 
@@ -94,6 +100,19 @@ public class Formacion
         }
 
         return cantidad;
+    }
+
+    public bool esEficiente()
+    {
+        foreach (Locomotora locomotora in _locomotoras)
+        {
+            if (locomotora.ArrastreUtil() < locomotora.Peso * 5)
+            {
+                return false;
+            }
+        } 
+
+        return true;
     }
 }
 
