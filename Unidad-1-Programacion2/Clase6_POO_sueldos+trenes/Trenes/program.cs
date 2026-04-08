@@ -45,6 +45,17 @@ internal class Program
         objLocomotora1.PesoMaximoArrastre = 12000;
 
         Console.WriteLine($"La Formacion es eficiente? {objFormacion1.esEficiente()}");
+
+        //5. Si una formación puede moverse. Una formación puede moverse si el arrastre útil total de las locomotoras es mayor o igual al peso máximo total de los vagones
+        Locomotora objLocomotora2 = new Locomotora();
+        objLocomotora2.Peso = 1000;
+        objLocomotora2.PesoMaximoArrastre = 12000;
+        objLocomotora2.VelocidadMaxima = 80;
+
+        objFormacion1.AgregarLocomotora(objLocomotora2);
+        Console.WriteLine($"La formación puede moverse: {objFormacion1.PuedeMoverse()}");
+
+        
     }
 }
 
@@ -132,6 +143,24 @@ public class Formacion
         }
 
         return minima;
+    }
+
+    public bool PuedeMoverse()
+    {
+        double arratreTotal = 0;
+        double pesoTotal = 0;
+
+        foreach (Locomotora locomotora in _locomotoras)
+        {
+            arratreTotal += locomotora.ArrastreUtil();
+        }
+
+        foreach (Vagon vagon in _vagones)
+        {
+            pesoTotal += vagon.PesoMaximo();
+        }
+
+        return arratreTotal >= pesoTotal;
     }
 }
 
