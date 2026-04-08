@@ -52,10 +52,14 @@ internal class Program
         objLocomotora2.PesoMaximoArrastre = 12000;
         objLocomotora2.VelocidadMaxima = 80;
 
-        objFormacion1.AgregarLocomotora(objLocomotora2);
+        /*    objFormacion1.AgregarLocomotora(objLocomotora2); */
         Console.WriteLine($"La formación puede moverse: {objFormacion1.PuedeMoverse()}");
 
-        
+        /*  6. Cuántos kilos de empuje le faltan a una formación para poder moverse, que es: 0 si ya se
+            puede mover, y (peso máximo total de los vagones – arrastre útil total de las locomotoras)
+            en caso contrario */
+
+        Console.WriteLine($"Le faltan {objFormacion1.CuantoLeFaltaParaMoverse()} kg de empuje para moverse");
     }
 }
 
@@ -161,6 +165,29 @@ public class Formacion
         }
 
         return arratreTotal >= pesoTotal;
+    }
+
+    public double CuantoLeFaltaParaMoverse()
+    {
+        double pesoMaximoTotalVagones = 0;
+        double arrastreUtilTotalLocomotoras = 0;
+
+        foreach (Vagon vagon in _vagones)
+        {
+            pesoMaximoTotalVagones += vagon.PesoMaximo();
+        }
+
+        foreach (Locomotora locomotora in _locomotoras)
+        {
+            arrastreUtilTotalLocomotoras += locomotora.ArrastreUtil();
+        }
+
+        if (arrastreUtilTotalLocomotoras >= pesoMaximoTotalVagones)
+        {
+            return 0;
+        }
+
+        return pesoMaximoTotalVagones - arrastreUtilTotalLocomotoras;
     }
 }
 
