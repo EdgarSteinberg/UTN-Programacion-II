@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Trenes",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "dotnet",
+            "args": [
+                "${workspaceFolder}/trenes_profesor_code/bin/Debug/net10.0/trenes.dll"
+            ],
+            "cwd": "${workspaceFolder}/trenes_profesor_code",
+            "console": "integratedTerminal"
+        }
+    ]
+}
