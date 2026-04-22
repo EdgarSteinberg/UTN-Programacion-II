@@ -1,17 +1,23 @@
-namespace Ejercicio.clases;
+namespace Ejercicios.clases;
 
 public class ArbolGenialogico
 {
-    private Persona _raiz;
-    public Persona Raiz
-    {
-        get { return _raiz; }
-        set { _raiz = value; }
-    }
+    public Persona? Raiz { get; set; }
 
     public void Mostrar()
     {
         Mostrar(Raiz);
     }
 
+    private void Mostrar(Persona p)
+    {
+        if (p == null) return;
+
+        Console.WriteLine($"{p.Nombre} {p.Apellido} {p.Anio_nacimiento} - {p.Id()}");
+
+        foreach (var hijo in p.Hijos)
+        {
+            Mostrar(hijo);
+        }
+    }
 }

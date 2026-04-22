@@ -1,4 +1,4 @@
-namespace Ejercicio.clases;
+namespace Ejercicios.clases;
 
 public class Persona
 {
