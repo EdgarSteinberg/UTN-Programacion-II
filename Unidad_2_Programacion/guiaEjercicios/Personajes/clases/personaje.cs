@@ -2,7 +2,7 @@ namespace clases
 {
     public abstract class Personaje
     {
-        private string _nombre;
+        private string _nombre = "";
         public string Nombre
         {
             get { return _nombre; }
@@ -30,8 +30,8 @@ namespace clases
             set { _puntosDeVitalidad = value; }
         }
 
-        private double _desplazamiento;
-        public double Desplazamiento
+        private int _desplazamiento;
+        public int Desplazamiento
         {
             get { return _desplazamiento; }
             set { _desplazamiento = value; }
@@ -72,51 +72,56 @@ namespace clases
             set { _estaMuerto = value; }
         }
 
-
         public void Atacar(Personaje objetivo)
         {
-            double danio = Arma.Danio;
+            if (EstaMuerto || objetivo.EstaMuerto)
+                return;
+
+            int danio = Arma != null ? Arma.Danio : 0;
 
             // habilidades de ATAQUE
             foreach (var habilidad in _habilidades)
             {
-                if (habilidad.Tipo == TipoHabilidad.ATAQUE)
+                if (habilidad.Tipo == TipoHabilidad.ATAQUE && habilidad.Desbloqueada)
                 {
-                    danio += habilidad.PuntosDeEfecto;
+                    danio += (int)habilidad.PuntosDeEfecto;
                 }
             }
 
-            // CASO ARMADURA MÁGICA
-            if (objetivo.Armadura.TipoDeProteccion == TipoAtaque.MAGICO)
+            if (objetivo.Armadura != null)
             {
-                if (Arma.Tipo == TipoAtaque.MAGICO)
+                // CASO ARMADURA MÁGICA
+                if (objetivo.Armadura.TipoDeProteccion == TipoAtaque.MAGICO)
                 {
-                    danio = 0;
-                }
-                else
-                {
-                    danio -= objetivo.Armadura.PuntosDeDefensa;
-
-                    foreach (var habilidad in objetivo.Habilidades)
+                    if (Arma != null && Arma.Tipo == TipoAtaque.MAGICO)
                     {
-                        if (habilidad.Tipo == TipoHabilidad.DEFENSA)
+                        danio = 0;
+                    }
+                    else
+                    {
+                        danio -= (int)objetivo.Armadura.PuntosDeDefensa;
+
+                        foreach (var habilidad in objetivo.Habilidades)
                         {
-                            danio -= habilidad.PuntosDeEfecto;
+                            if (habilidad.Tipo == TipoHabilidad.DEFENSA && habilidad.Desbloqueada)
+                            {
+                                danio -= (int)habilidad.PuntosDeEfecto;
+                            }
                         }
                     }
                 }
-            }
-            else
-            {
-                if (Arma.Tipo == objetivo.Armadura.TipoDeProteccion)
+                else
                 {
-                    danio -= objetivo.Armadura.PuntosDeDefensa;
-
-                    foreach (var habilidad in objetivo.Habilidades)
+                    if (Arma != null && Arma.Tipo == objetivo.Armadura.TipoDeProteccion)
                     {
-                        if (habilidad.Tipo == TipoHabilidad.DEFENSA)
+                        danio -= (int)objetivo.Armadura.PuntosDeDefensa;
+
+                        foreach (var habilidad in objetivo.Habilidades)
                         {
-                            danio -= habilidad.PuntosDeEfecto;
+                            if (habilidad.Tipo == TipoHabilidad.DEFENSA && habilidad.Desbloqueada)
+                            {
+                                danio -= (int)habilidad.PuntosDeEfecto;
+                            }
                         }
                     }
                 }
@@ -130,12 +135,13 @@ namespace clases
 
         public void Avanzar()
         {
-            double metros = this.Desplazamiento - this.Armadura.PenalizacionMovimiento;
+            int penalizacion = Armadura != null ? (int)Armadura.PenalizacionMovimiento : 0;
+            int metros = Desplazamiento - penalizacion;
 
             if (metros < 0)
                 metros = 0;
 
-            Console.WriteLine($"{this.Nombre} avanza {metros} metros");
+            Console.WriteLine($"{Nombre} avanza {metros} metros");
         }
 
         public void Morir()
@@ -146,13 +152,47 @@ namespace clases
             Console.WriteLine($"{Nombre} ha muerto");
         }
 
-        public void RecibirDanio(double danio)
+        public void RecibirDanio(int danio)
         {
-            this.PuntosDeVitalidad -= danio;
+            PuntosDeVitalidad -= danio;
 
             if (PuntosDeVitalidad <= 0)
             {
                 Morir();
+            }
+        }
+
+        public void ObtenerRecompensa(Personaje enemigo, int energiaQuitada)
+        {
+            if (enemigo.Arma != null)
+            {
+                Inventario.Add(enemigo.Arma);
+                enemigo.Arma = null;
+            }
+
+            if (enemigo.Armadura != null)
+            {
+                Inventario.Add(enemigo.Armadura);
+                enemigo.Armadura = null;
+            }
+
+            PuntosDeExperiencia += energiaQuitada;
+        }
+
+        public void SubirNivel()
+        {
+            if (PuntosDeExperiencia >= (Nivel + 1) * (Nivel + 1))
+            {
+                Nivel++;
+                PuntosDeVitalidad = 20 * Nivel;
+
+                foreach (var habilidad in _habilidades)
+                {
+                    if (habilidad.NivelRequerido == Nivel)
+                    {
+                        habilidad.Desbloqueada = true;
+                    }
+                }
             }
         }
     }

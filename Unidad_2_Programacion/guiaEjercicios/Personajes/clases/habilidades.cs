@@ -2,7 +2,7 @@ namespace clases
 {
     public class Habilidad
     {
-        private string _nombre;
+        private string _nombre = "";
         public string Nombre
         {
             get { return _nombre; }
@@ -16,8 +16,8 @@ namespace clases
             set { _nivelRequerido = value; }
         }
 
-        private double _puntosDeEfecto;
-        public double PuntosDeEfecto
+        private int _puntosDeEfecto;
+        public int PuntosDeEfecto
         {
             get { return _puntosDeEfecto; }
             set { _puntosDeEfecto = value; }
@@ -28,6 +28,22 @@ namespace clases
         {
             get { return _tipo; }
             set { _tipo = value; }
+        }
+
+        private bool _desbloqueada;
+        public bool Desbloqueada
+        {
+            get { return _desbloqueada; }
+            set { _desbloqueada = value; }
+        }
+
+        public Habilidad(string nombre, int nivelRequerido, int puntoDeEfecto, TipoHabilidad tipo)
+        {
+            Nombre = nombre;
+            NivelRequerido = nivelRequerido;
+            PuntosDeEfecto = puntoDeEfecto;
+            Tipo = tipo;
+            Desbloqueada = false;
         }
     }
 }

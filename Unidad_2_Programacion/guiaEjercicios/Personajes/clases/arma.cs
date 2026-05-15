@@ -1,8 +1,8 @@
 namespace clases
 {
-    public class Arma 
+    public class Arma
     {
-        private string _nombre;
+        private string _nombre = "";
         public string Nombre
         {
             get { return _nombre; }
@@ -23,6 +23,11 @@ namespace clases
             set { _tipo = value; }
         }
 
-      
+        public Arma(string nombre, int danio, TipoAtaque tipo)
+        {
+            Nombre = nombre;
+            Danio = danio;
+            Tipo = tipo;
+        }
     }
 }
