@@ -2,6 +2,14 @@ namespace clases
 {
     public abstract class Personaje
     {
+
+        public Personaje()
+        {
+            PuntosDeExperiencia = 0;
+            PuntosDeVitalidad = 20;
+            Nivel = 1;
+            EstaMuerto = false;
+        }
         private string _nombre = "";
         public string Nombre
         {

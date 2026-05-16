@@ -14,9 +14,9 @@ class Program
 
         Arma baston = new Arma("Bastón arcano", 5, TipoAtaque.MAGICO); // ignora defensa en algunos casos
 
-        Console.WriteLine($"Arma: {espada.Nombre}");
-        Console.WriteLine($"Daño: {espada.Danio}");
-        Console.WriteLine($"Tipo: {espada.Tipo}");
+        /*  Console.WriteLine($"Arma: {espada.Nombre}");
+         Console.WriteLine($"Daño: {espada.Danio}");
+         Console.WriteLine($"Tipo: {espada.Tipo}"); */
 
         //Armadura 
 
@@ -36,6 +36,68 @@ class Program
         Habilidad arquero = new Habilidad("Disparo Preciso", 2, 3, TipoHabilidad.ATAQUE);
 
         Habilidad caballeria = new Habilidad("Carga de Caballería", 3, 5, TipoHabilidad.ATAQUE);
+
+
+        //Personaje
+        Guerrero guerrero = new Guerrero();
+        guerrero.Nombre = "Hercules";
+        guerrero.Arma = lanza;
+        guerrero.Armadura = bronce;
+
+        guerrero.Habilidades = new List<Habilidad>
+        {
+             infanteria,
+             arquero,
+             caballeria
+        };
+        Console.WriteLine($"Personaje: {guerrero.Nombre}");
+        Console.WriteLine($"Arma: {guerrero.Arma.Nombre}");
+        Console.WriteLine($"Armadura: {guerrero.Armadura.Nombre}");
+        Console.WriteLine($"Vida: {guerrero.PuntosDeVitalidad}");
+        guerrero.SubirNivel();
+
+        // Mago
+        Mago mago = new Mago();
+        mago.Nombre = "Wally";
+        mago.Arma = baston;
+        mago.Armadura = magica;
+
+        mago.Habilidades = new List<Habilidad>
+        {
+             infanteria,
+             arquero,
+             caballeria
+        };
+
+        Console.WriteLine($"Personaje: {mago.Nombre}");
+        Console.WriteLine($"Arma: {mago.Arma.Nombre}");
+        Console.WriteLine($"Armadura: {mago.Armadura.Nombre}");
+        Console.WriteLine($"Vida: {mago.PuntosDeVitalidad}");
+
+
+        Console.WriteLine("⚔️ Hercules vs Wally ⚔️");
+        guerrero.Atacar(mago);
+        Console.WriteLine($"{mago.Nombre} ahora tiene {mago.PuntosDeVitalidad} de vida");
+
+        mago.Atacar(guerrero);
+        Console.WriteLine($"{guerrero.Nombre} ahora tiene {guerrero.PuntosDeVitalidad} de vida");
+
+        guerrero.Atacar(mago);
+        Console.WriteLine($"{mago.Nombre} ahora tiene {mago.PuntosDeVitalidad} de vida");
+
+        mago.Atacar(guerrero);
+        Console.WriteLine($"{guerrero.Nombre} ahora tiene {guerrero.PuntosDeVitalidad} de vida");
+
+        guerrero.Atacar(mago);
+        Console.WriteLine($"{mago.Nombre} ahora tiene {mago.PuntosDeVitalidad} de vida");
+
+        mago.Atacar(guerrero);
+        Console.WriteLine($"{guerrero.Nombre} ahora tiene {guerrero.PuntosDeVitalidad} de vida");
+         guerrero.Atacar(mago);
+        Console.WriteLine($"{mago.Nombre} ahora tiene {mago.PuntosDeVitalidad} de vida");
+    
+        mago.Atacar(guerrero);
+         Console.WriteLine($"{guerrero.Nombre} ahora tiene {guerrero.PuntosDeVitalidad} de vida");
     }
 }
 
