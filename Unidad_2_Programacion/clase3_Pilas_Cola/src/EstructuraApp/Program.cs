@@ -15,10 +15,20 @@ using EstructurasLibrary;
 var miPila = new MyStack<int>(); //Head -> null
 
 
- miPila.Push(1) ; // Head -> [1 | ]-> null
- miPila.Push(2) ; // Head -> [2 | ]-> [1 | ] => null
- miPila.Push(3);
+miPila.Push(1); // Head -> [1 | ]-> null
+miPila.Push(2); // Head -> [2 | ]-> [1 | ] => null
+miPila.Push(3);
 
- Console.WriteLine(miPila.Pop());
- Console.WriteLine(miPila.Pop());
- Console.WriteLine(miPila.Pop());
+Console.WriteLine(miPila.Pop());
+Console.WriteLine(miPila.Pop());
+Console.WriteLine(miPila.Pop());
+
+var miCola = new MyQueue<int>();
+
+miCola.Enqueue(1);
+miCola.Enqueue(2);
+miCola.Enqueue(3);
+
+Console.WriteLine(miCola.Dequeue());
+Console.WriteLine(miCola.Dequeue());
+Console.WriteLine(miCola.Dequeue());
