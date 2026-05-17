@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EstructuraApp/EstructuraApp.csproj" />
+    <Project Path="src/EstructurasLibrary/EstructurasLibrary.csproj" />
+  </Folder>
+</Solution>
