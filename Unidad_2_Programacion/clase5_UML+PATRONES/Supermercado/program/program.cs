@@ -39,3 +39,5 @@ super.Recibir(objPersona3);
 super.Recibir(objPersona4);
 
 super.Atender();
+
+super.MostrarTodo();

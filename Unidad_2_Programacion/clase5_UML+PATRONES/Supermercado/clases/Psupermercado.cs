@@ -57,4 +57,37 @@ public class Psupermercado
 
         Console.WriteLine($"Atendiendo a: {persona.Nombre}");
     }
+
+
+    public void MostrarCola(MyQueue<Ppersona> colaOriginal)
+    {
+        MyQueue<Ppersona> aux = new MyQueue<Ppersona>();
+
+        while (!colaOriginal.IsEmpty())
+        {
+            Ppersona persona = colaOriginal.Dequeue();
+
+            Console.WriteLine(persona.Nombre);
+
+            aux.Enqueue(persona);
+        }
+
+        // reconstrucción
+        while (!aux.IsEmpty())
+        {
+            colaOriginal.Enqueue(aux.Dequeue());
+        }
+    }
+
+    public void MostrarTodo()
+    {
+        Console.WriteLine("=== MAYORES ===");
+        MostrarCola(_mayores);
+
+        Console.WriteLine("=== EXCELENCIA ===");
+        MostrarCola(_excelencia);
+
+        Console.WriteLine("=== REGULARES ===");
+        MostrarCola(_regulares);
+    }
 }
