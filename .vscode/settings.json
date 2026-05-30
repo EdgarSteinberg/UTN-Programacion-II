@@ -18,5 +18,7 @@
         "titleBar.inactiveBackground": "#5c1d6f99",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#5C1D6F"
+    "peacock.color": "#5C1D6F",
+    
+    "hediet.vscode-drawio.theme": "dark"
 }
