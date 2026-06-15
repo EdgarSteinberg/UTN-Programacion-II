@@ -1,4 +1,4 @@
-using EstructurasLibrary;
+/* using EstructurasLibrary;
 
 Carpeta carpetaPrincipal = new Carpeta("Disco C", 7);
 
@@ -34,3 +34,4 @@ void AnalizadorDeElementos(Elemento unElemento)
 {
     Console.WriteLine($"El elemento {unElemento.Nombre}, pesa {unElemento.DevolverTamano()} MB");
 }
+ */

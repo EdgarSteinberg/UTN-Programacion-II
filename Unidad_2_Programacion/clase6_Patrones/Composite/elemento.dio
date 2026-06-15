@@ -1,0 +1,86 @@
+<mxfile host="65bd71144e">
+    <diagram id="_4wpSgfcAuvInUeC5iGC" name="Page-1">
+        <mxGraphModel dx="702" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;i&gt;Elemento&lt;/i&gt;&lt;div&gt;&lt;i&gt;&amp;nbsp;Component&lt;/i&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="50" width="290" height="163" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry y="55" width="290" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="- nombre : string" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry y="75" width="290" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="- tamano : int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry y="95" width="290" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="115" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry y="123" width="290" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;i&gt;public abtract int DevolverCalculo()&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry y="143" width="290" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;startArrow=diamond;startFill=1;" parent="1" source="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="Archivo&lt;div&gt;Leaf&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="270" width="250" height="123" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="10" vertex="1">
+                    <mxGeometry y="55" width="250" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="10" vertex="1">
+                    <mxGeometry y="63" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="operation1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="10" vertex="1">
+                    <mxGeometry y="83" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="+ public override int DevolverCalculo()" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="10" vertex="1">
+                    <mxGeometry y="103" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;startArrow=diamond;startFill=1;" parent="1" source="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Carpeta&lt;div&gt;Composite&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="280" width="240" height="203" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="55" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="- private List&amp;lt;Elmento&amp;gt; _elementos" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="75" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="16" vertex="1">
+                    <mxGeometry y="95" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="103" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="operation1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="123" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="+ AgregarElemento(Elemento elemento)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="143" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="+ EliminarElemento(Elemento elemento)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="163" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="+ public overide int DevolverCalculo()" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry y="183" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;li data-end=&quot;1860&quot; data-start=&quot;1801&quot; data-section-id=&quot;dj2ss3&quot;&gt;&lt;strong data-end=&quot;1811&quot; data-start=&quot;1803&quot;&gt;SRP:&lt;/strong&gt; Cada clase tiene una responsabilidad específica.&lt;br&gt;&lt;/li&gt;&lt;br&gt;&lt;li data-end=&quot;1950&quot; data-start=&quot;1861&quot; data-section-id=&quot;1cf5s7f&quot;&gt;&lt;br&gt;&lt;strong data-end=&quot;1871&quot; data-start=&quot;1863&quot;&gt;OCP:&lt;/strong&gt; Se pueden agregar nuevos tipos de elementos sin modificar el código existente.&lt;br&gt;&lt;/li&gt;&lt;br&gt;&lt;li data-end=&quot;2014&quot; data-start=&quot;1951&quot; data-section-id=&quot;j8c1un&quot;&gt;&lt;br&gt;&lt;strong data-end=&quot;1961&quot; data-start=&quot;1953&quot;&gt;LSP:&lt;/strong&gt; &lt;code data-end=&quot;1971&quot; data-start=&quot;1962&quot;&gt;Archivo&lt;/code&gt; y &lt;code data-end=&quot;1983&quot; data-start=&quot;1974&quot;&gt;Carpeta&lt;/code&gt; pueden sustituir a &lt;code data-end=&quot;2013&quot; data-start=&quot;2003&quot;&gt;Elemento&lt;/code&gt;.&lt;br&gt;&lt;/li&gt;&lt;br&gt;&lt;li data-end=&quot;2090&quot; data-start=&quot;2015&quot; data-section-id=&quot;1iknsbw&quot;&gt;&lt;br&gt;&lt;strong data-end=&quot;2025&quot; data-start=&quot;2017&quot;&gt;ISP:&lt;/strong&gt; Las clases implementan únicamente las operaciones que necesitan.&lt;br&gt;&lt;/li&gt;&lt;br&gt;&lt;li data-end=&quot;2184&quot; data-start=&quot;2091&quot; data-section-id=&quot;1rwkezy&quot;&gt;&lt;br&gt;&lt;strong data-end=&quot;2101&quot; data-start=&quot;2093&quot;&gt;DIP:&lt;/strong&gt; &lt;code data-end=&quot;2111&quot; data-start=&quot;2102&quot;&gt;Carpeta&lt;/code&gt; depende de la abstracción &lt;code data-end=&quot;2148&quot; data-start=&quot;2138&quot;&gt;Elemento&lt;/code&gt; y no de implementaciones concretas.&lt;/li&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="30" width="510" height="230" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

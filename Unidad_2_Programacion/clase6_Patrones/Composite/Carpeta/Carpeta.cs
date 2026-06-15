@@ -2,10 +2,6 @@ namespace EstructurasLibrary;
 
 public class Carpeta : Elemento
 {
-    public Carpeta(string nombre, int tamano) : base(nombre, tamano)
-    {
-        this.Elementos = new List<Elemento>();
-    }
 
     private List<Elemento> _elementos;
     public List<Elemento> Elementos
@@ -13,6 +9,12 @@ public class Carpeta : Elemento
         get { return _elementos; }
         set { _elementos = value; }
     }
+    
+    public Carpeta(string nombre, int tamano) : base(nombre, tamano)
+    {
+        this.Elementos = new List<Elemento>();
+    }
+
 
     public override int DevolverTamano()
     {
