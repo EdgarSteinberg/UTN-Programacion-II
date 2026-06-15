@@ -1,6 +1,6 @@
 ﻿
 
-using  ConsoleLibrary;
+//using  ConsoleLibrary;
 
 
 //Ejemplo de Template Method
@@ -15,9 +15,13 @@ using  ConsoleLibrary;
 
 
 //Inicio de Decorator
-Bebida objCafecito;
+/* Bebida objCafecito;
 objCafecito = new Cafe();
 objCafecito = new Leche(objCafecito);
 objCafecito = new Azucar(objCafecito);
 
 Console.WriteLine("Descripción: " + objCafecito.Descripcion + " Costo: " + objCafecito.Costo());
+ */
+
+
+ 
