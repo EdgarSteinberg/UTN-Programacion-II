@@ -1,4 +1,4 @@
-using EstructurasLibrary;
+/* using EstructurasLibrary;
 
 Presidente.Eleccion("Edgar", "Steinberg");
 Presidente objPresidente = Presidente.DevolverInstancia();
@@ -18,6 +18,6 @@ usuario.Apellido = "Steinberg";
 
 session.Usuario = usuario;
 
-Console.WriteLine(session.Usuario.Nombre);
+Console.WriteLine(session.Usuario.Nombre); */
 
  
